@@ -1,6 +1,6 @@
 ### Create 유저 생성
 
-POST http://localhost:3000/user/Create
+POST http://localhost:3000/user/create
 content-type: application/json
 
 {
@@ -24,3 +24,13 @@ content-type: application/json
 
 ### Delete User 유저 삭제
 DELETE http://localhost:3000/user/delete/andy@podo.com
+
+### 잘못된 이메일을 입력한 경우
+POST http://localhost:3000/user/create
+content-type : application/json
+
+{
+    "username" : "andy",
+    "password": "test1234",
+    "email": "andy-podo"
+}
