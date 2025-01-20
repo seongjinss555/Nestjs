@@ -1,7 +1,7 @@
-# GDG_CONNECTING
+# NextJS + TypeScript
 
 ## 🖥 프로젝트 소개
-Next.js와 TypeScript를 공부하기 위하여 만든 프로젝트입니다
+Next.js와 TypeScript를 공부하기 위하여 만든 프로젝트입니다. 각종 로그인 방법을 구현합니다
 <br>
 
 ## ⚙ 개발 환경
