@@ -4,7 +4,7 @@ POST http://localhost:3000/auth/register
 Content-Type: application/json
 
 {
-    "email": "andy2@podo.com",
-    "password": "1234ewretew",
+    "email": "andy10@podo.com",
+    "password": "12341qwre",
     "username": "andy434"
 }
