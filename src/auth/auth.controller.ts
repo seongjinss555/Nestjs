@@ -1,7 +1,15 @@
-import { Body, Controller, Get, Post, Request, Response } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  Post,
+  Request,
+  Response,
+  UseGuards,
+} from '@nestjs/common';
 import { CreateUserDto } from 'src/user/user.dto';
 import { AuthService } from './auth.service';
-
+import { LocalAuthGuard, AuthenticatedGuard, LoginGuard } from './auth.guard';
 @Controller('auth')
 export class AuthController {
   constructor(private authService: AuthService) {} //AuthService를 주입받음
@@ -27,5 +35,39 @@ export class AuthController {
       });
     } //유저 정보가 있다면, 쿠키 정보를 response에 저장
     return res.send({ message: 'login success' });
+  }
+
+  @UseGuards(LoginGuard) //loginguard 사용
+  @Post('login2')
+  async login2(@Request() req, @Response() res) {
+    //쿠키 정보는 없지만 request에 user 정보가 있다면 응답값에 쿠키 정보 추가
+    if (!req.cookies['login'] && res.user) {
+      //응답에 쿠키 정보 추가
+      res.cookie('login', JSON.stringify(req.user), {
+        httpOnly: true,
+        maxAge: 1000 * 10,
+      });
+    } else {
+      console.log('No user information found or cookie already exists.');
+    }
+    return res.send({ message: 'login2 success' });
+  }
+
+  @UseGuards(LoginGuard)
+  @Get('test-guard')
+  testGuard() {
+    return '로그인된 때만 이 글이 보입니다.';
+  }
+
+  @UseGuards(LocalAuthGuard)
+  @Post('login3')
+  login3(@Request() req) {
+    return req.user;
+  }
+
+  @UseGuards(AuthenticatedGuard)
+  @Get('test-guard2')
+  testGuardWithSession(@Request() req) {
+    return req.user;
   }
 }
