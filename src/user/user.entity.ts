@@ -8,7 +8,7 @@ export class User {
   @Column({ unique: true }) //unique는 DB안에 유일함을 보장. ex) 동일한 이메일 주소를 가질 수 없음
   email: String;
 
-  @Column()
+  @Column({ nullable: true }) // 패스워드에 빈값 허용
   password: string;
 
   @Column()
@@ -16,4 +16,7 @@ export class User {
 
   @Column({ type: 'datetime', default: () => 'CURRENT_TIMESTAMP' }) //기본값을 넣어줌
   createdDt: Date = new Date();
+
+  @Column({ nullable: true }) // providerId에 빈 값 허용
+  providerId: String; // providerId 추가
 }
