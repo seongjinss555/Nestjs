@@ -1,7 +1,7 @@
-# NextJS + TypeScript
+# NestJS + TypeScript
 
 ## 🖥 프로젝트 소개
-Next.js와 TypeScript를 공부하기 위하여 만든 프로젝트입니다. 각종 로그인 방법을 구현합니다
+Nest.js와 TypeScript를 공부하기 위하여 만든 프로젝트입니다. 각종 로그인 방법을 구현합니다
 <br>
 
 ## ⚙ 개발 환경
@@ -11,7 +11,7 @@ Next.js와 TypeScript를 공부하기 위하여 만든 프로젝트입니다. �
 
 **component** :
 
-웹 어플리케이션 서버 : ![NextJS](https://img.shields.io/badge/NextJS-%2320232a.svg?logo=react&logoColor=%2361DAFB)
+웹 어플리케이션 서버 : ![NextJS](https://img.shields.io/badge/NestJS-%2320232a.svg?logo=react&logoColor=%2361DAFB)
 
 DB : ![SQLite](https://img.shields.io/badge/SQLite-%2320232a.svg?logo=react&logoColor=%2361DAFB)
 
