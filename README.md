@@ -30,4 +30,4 @@ DB : ![SQLite](https://img.shields.io/badge/SQLite-%2320232a.svg?logo=react&logo
 서버 기동 후 웹페이지에서 실행
 
 ## 관련 정리 노션
-[https://functional-triangle-ab6.notion.site/GDGoC_FE_-17b67c35c399809f8aa3eda1f04fd671?pvs=4](https://functional-triangle-ab6.notion.site/Next-js-TypeScript-17d67c35c399809f9352e92eaaf10d22?pvs=4)
+[[https://functional-triangle-ab6.notion.site/GDGoC_FE_-17b67c35c399809f8aa3eda1f04fd671?pvs=4](https://functional-triangle-ab6.notion.site/Next-js-TypeScript-17d67c35c399809f9352e92eaaf10d22?pvs=4)](https://functional-triangle-ab6.notion.site/Nest-js-TypeScript-17d67c35c399809f9352e92eaaf10d22?pvs=4)
