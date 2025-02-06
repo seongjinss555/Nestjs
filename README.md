@@ -24,6 +24,8 @@ DB : ![SQLite](https://img.shields.io/badge/SQLite-%2320232a.svg?logo=react&logo
 
 세션을 사용한 인증정보 저장
 
+구글 OAuth 로그인
+
 ## 데스트
 서버 기동 후 웹페이지에서 실행
 
